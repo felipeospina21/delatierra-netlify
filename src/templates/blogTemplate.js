@@ -1,6 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
-import Layout from "../components/layout"
+// import Layout from "../components/layout"
 import SEO from '../components/seo'
 
 export default function Template({
@@ -9,7 +9,8 @@ export default function Template({
     const { markdownRemark } = data // data.markdownRemark holds your post data
     const { frontmatter, html } = markdownRemark
     return (
-        <Layout>
+      
+        <>
             <SEO
                 title={frontmatter.title}
                 description={frontmatter.description} />
@@ -23,7 +24,8 @@ export default function Template({
                     />
                 </div>
             </div>
-        </Layout>
+      
+        </>
 
     )
 }
