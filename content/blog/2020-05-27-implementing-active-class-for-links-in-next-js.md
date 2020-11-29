@@ -1,14 +1,13 @@
 ---
+path: /blog/nextjs-active-link
+keywords: next.js active link style
+slug: nextjs-active-link
 title: Implementing Active Class for Links in Next.js
 date: 2020-05-27T23:13:10.104Z
+thumbnail: /img/macadamia.jpg
 description: Implementing Active Class for Links in Next.js
-keywords: next.js active link style
-path: /blog/nextjs-active-link
-slug: nextjs-active-link
 tags:
   - next.js
-  - 前端
-  - 網頁開發
 ---
 Since next.js does not have built-in solutions for active link styling, I spent some time looking for a concise way so implement it. This is the best one I've found so far. The code is written in typescript, but you can delete the types if you don't want to bother with the types.
 
