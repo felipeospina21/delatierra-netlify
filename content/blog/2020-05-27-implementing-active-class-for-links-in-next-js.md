@@ -4,7 +4,7 @@ keywords: next.js active link style
 slug: nextjs-active-link
 title: Implementing Active Class for Links in Next.js
 date: 2020-05-27T23:13:10.104Z
-thumbnail: /img/macadamia.jpg
+thumbnail: /img/2.jpeg
 description: Implementing Active Class for Links in Next.js
 tags:
   - next.js
