@@ -1,17 +1,16 @@
 require("dotenv").config({
   path: `.env.${process.env.NODE_ENV || "development"}`,
-});
+})
 
 // const clientConfig = require("./client-config");
-const isProd = process.env.NODE_ENV === "production";
+const isProd = process.env.NODE_ENV === "production"
 const myCustomQueries = {
   xs: "(max-width: 320px)",
   sm: "(max-width: 720px)",
   md: "(max-width: 1000px)",
   l: "(max-width: 1536px)",
   portrait: "(orientation: portrait)",
-};
-
+}
 
 module.exports = {
   siteMetadata: {
@@ -42,6 +41,13 @@ module.exports = {
       options: {
         name: `markdown-pages`,
         path: `${__dirname}/content/blog`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `blog-images`,
+        path: `${__dirname}/static/img`,
       },
     },
     `gatsby-transformer-remark`,

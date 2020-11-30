@@ -1,8 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
-import Image from "../components/image"
 import PostLink from "../components/postLink"
-
 import SEO from "../components/seo"
 import WhatsappBtn from "../components/Layout/WhatsappBtn"
 
@@ -11,19 +9,17 @@ const BlogPageTemplate = ({
     allMarkdownRemark: { edges },
   },
 }) => {
-  // const { markdownRemark } = data;
-  // const { frontmatter, html } = markdownRemark;
   return (
-    <>
+    <div>
       <SEO title="Blog" />
-      <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-        <Image />
-      </div>
+      <WhatsappBtn />
       <h1>Recetas y tips</h1>
-      {edges.map(edge => (
-        <PostLink key={edge.node.id} post={edge.node} />
-      ))}
-    </>
+      <div>
+        {edges.map(edge => (
+          <PostLink key={edge.node.id} post={edge.node} />
+        ))}
+      </div>
+    </div>
   )
 }
 
@@ -40,6 +36,8 @@ export const BlogPageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             slug
             title
+            thumbnail
+            description
           }
         }
       }

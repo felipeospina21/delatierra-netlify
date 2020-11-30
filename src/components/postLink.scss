@@ -1,0 +1,17 @@
+.post-preview-img{
+    width: 100%;
+    max-height: 300px;
+    // height: 300px;
+}
+
+.post-preview-container{
+    width: 400px;
+    height: 500px;
+    display: block;
+    color: black;
+    border: 1px solid black;
+}
+
+.post-link-container{
+    display: flex;
+}
