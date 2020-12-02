@@ -22,6 +22,22 @@ module.exports = {
     `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
+    `gatsby-remark-images`,
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        extensions: [`.md`, `.mdx`],
+        gatsbyRemarkPlugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 1000,
+              
+            },
+          },
+        ],
+      },
+    },
     {
       resolve: "gatsby-plugin-breakpoints",
       options: {
@@ -48,20 +64,6 @@ module.exports = {
       options: {
         name: `blog-images`,
         path: `${__dirname}/static/img`,
-      },
-    },
-    // `gatsby-transformer-remark`,
-    {
-      resolve: `gatsby-transformer-remark`,
-      options: {
-        plugins: [
-          {
-            resolve: `gatsby-remark-images`,
-            options: {
-              maxWidth: 800,
-            },
-          },
-        ],
       },
     },
     {

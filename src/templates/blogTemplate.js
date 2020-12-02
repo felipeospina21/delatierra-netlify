@@ -1,26 +1,30 @@
 import React from "react"
 import { graphql } from "gatsby"
-// import Layout from "../components/layout"
+import ImageBlog from "../components/imageBlog"
+import { MDXRenderer } from "gatsby-plugin-mdx"
 import SEO from "../components/seo"
 
-import './blogTemplate.scss'
+import "./blogTemplate.scss"
 
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
 }) {
-  const { markdownRemark } = data // data.markdownRemark holds your post data
-  const { frontmatter, html } = markdownRemark
+  const { mdx } = data // data.markdownRemark holds your post data
+  const { frontmatter, html } = mdx
   return (
     <>
       <SEO title={frontmatter.title} description={frontmatter.description} />
       <div className="blog-post-container">
+        <ImageBlog
+          src={frontmatter.thumbnail}
+          alt={frontmatter.title}
+          className="blog-template-image"
+        />
         <div className="blog-post">
           <h1>{frontmatter.title}</h1>
           <h2>{frontmatter.date}</h2>
-          <div
-            className="blog-post-content"
-            dangerouslySetInnerHTML={{ __html: html }}
-          />
+
+          <MDXRenderer className="blog-post-content">{mdx.body}</MDXRenderer>
         </div>
       </div>
     </>
@@ -28,12 +32,11 @@ export default function Template({
 }
 
 export const pageQuery = graphql`
-  query($slug: String!) {
-    markdownRemark(frontmatter: { slug: { eq: $slug } }) {
-      html
+  query BlogPostQuery($id: String) {
+    mdx(id: { eq: $id }) {
+      body
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
-        slug
         title
         description
         tags

@@ -7,18 +7,20 @@ import "./postLink.scss"
 const PostLink = ({ post }) => {
   return (
     <div className="post-link-container">
-      <Link to={"/" + post.frontmatter.slug}>
+      <Link to={post.fields.slug}>
         <div className="post-preview-container">
           <ImageBlog
             src={post.frontmatter.thumbnail}
             alt={post.frontmatter.title}
             className="post-preview-img"
           />
-          <small>
-            <strong>{post.frontmatter.date}</strong>
-          </small>
-          <h3 className="post-preview-title">{post.frontmatter.title}</h3>
-          <p>{post.frontmatter.description}</p>
+          <div className='post-preview-text-container'>
+            <small>
+              <strong>{post.frontmatter.date}</strong>
+            </small>
+            <h3 className="post-preview-title">{post.frontmatter.title}</h3>
+            <p>{post.frontmatter.description}</p>
+          </div>
         </div>
       </Link>
     </div>

@@ -1,11 +1,16 @@
 .blog-post-container{
     max-width: 800px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     margin: 1em auto;
 
 }
 
 .blog-post, .blog-post-conten{
+    width: 100%;
+}
+
+.blog-template-image{
     width: 100%;
 }

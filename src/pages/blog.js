@@ -8,7 +8,7 @@ import '../components/postLink.scss'
 
 const BlogPageTemplate = ({
   data: {
-    allMarkdownRemark: { edges },
+    allMdx: { edges },
   },
 }) => {
 
@@ -16,7 +16,7 @@ const BlogPageTemplate = ({
     <div>
       <SEO title="Blog" />
       <WhatsappBtn />
-      <h1>Recetas y tips</h1>
+      <h1 className='blog-page-title'>Recetas y tips</h1>
       <div className='post-link-wrapper'>
         {edges.map(edge => (
           <PostLink key={edge.node.id} post={edge.node}/>
@@ -30,7 +30,7 @@ export default BlogPageTemplate
 
 export const BlogPageQuery = graphql`
   query {
-    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+    allMdx(sort: { order: DESC, fields: [frontmatter___date] }) {
       edges {
         node {
           id
@@ -41,6 +41,9 @@ export const BlogPageQuery = graphql`
             title
             description
             thumbnail
+          }
+          fields{
+            slug
           }
         }
       }
