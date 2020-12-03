@@ -13,7 +13,7 @@ const ImageBlog = ({ src, ...rest }) => {
             extension
             publicURL
             childImageSharp {
-              fluid(maxWidth: 500, maxHeight: 400) {
+              fluid(maxWidth: 1000, maxHeight: 800) {
                 ...GatsbyImageSharpFluid
               }
             }
