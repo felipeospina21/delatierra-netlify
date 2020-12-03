@@ -28,7 +28,3 @@ Nuestro GHEE es perfecto para cocinar. Además de agregar un sabor delicioso a t
 3. Adiciona sal rosada, pimienta, ajo en polvo (no sal de ajo) y todas las especias que quieras!
 4. Agrega semillas de calabaza y girasol.
 5. Saltea por unos minutos más hasta que esté todo doradito y huela deli.
-
-![foto](/img/macadamia.jpg "foto")
-
-![foto](/img/marañon.jpeg "foto")
