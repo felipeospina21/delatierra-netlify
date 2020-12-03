@@ -40,7 +40,7 @@ const ImageBlog = ({ src, ...rest }) => {
   return <Img fluid={childImageSharp.fluid} {...rest} />
 }
 
-Image.propTypes = {
+ImageBlog.propTypes = {
   src: PropTypes.string.isRequired,
   alt: PropTypes.string,
 }
