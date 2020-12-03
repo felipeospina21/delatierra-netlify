@@ -1,8 +1,9 @@
 ---
-title: BRÓCOLI SALTEADO CON GHEE Y SEMILLAS
+title: BRÓCOLI CON GHEE Y SEMILLAS
 date: 2020-12-03T21:39:04.553Z
-thumbnail: /img/1.jpeg
-description: Deliciosa preparación de brócoli para acompañar tu comida favorita
+thumbnail: /img/1000x800-2.jpg
+description: El brócoli puede ser un vegetal aburrido, pero con esta receta lo
+  amarás! Perfecta para acompañar tu plato favorito.
 tags:
   - receta
   - brócoli
