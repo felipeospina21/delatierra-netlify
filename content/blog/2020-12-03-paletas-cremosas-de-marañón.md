@@ -1,7 +1,7 @@
 ---
 title: PALETAS CREMOSAS DE MARAÑÓN
 date: 2020-12-03T21:22:15.655Z
-thumbnail: /img/20200824_123337-01-01-01.jpeg
+thumbnail: /img/1000x800.jpg
 description: Deliciosas paletas con crema de marañón
 tags:
   - receta
