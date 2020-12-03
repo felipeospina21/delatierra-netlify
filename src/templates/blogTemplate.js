@@ -21,8 +21,10 @@ export default function Template({
           className="blog-template-image"
         />
         <div className="blog-post">
-          <small><strong>{frontmatter.date}</strong></small>
-          <h1 className='blog-post-title'>{frontmatter.title}</h1>
+          <small>
+            <strong>{frontmatter.date}</strong>
+          </small>
+          <h1 className="blog-post-title">{frontmatter.title}</h1>
 
           <MDXRenderer className="blog-post-content">{mdx.body}</MDXRenderer>
         </div>

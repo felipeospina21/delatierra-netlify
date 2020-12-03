@@ -4,22 +4,21 @@ import PostLink from "../components/postLink"
 import SEO from "../components/seo"
 import WhatsappBtn from "../components/Layout/WhatsappBtn"
 
-import '../components/postLink.scss'
+import "../components/postLink.scss"
 
 const BlogPageTemplate = ({
   data: {
     allMdx: { edges },
   },
 }) => {
-
   return (
     <div>
       <SEO title="Blog" />
       <WhatsappBtn />
-      <h1 className='blog-page-title'>Recetas y tips</h1>
-      <div className='post-link-wrapper'>
+      <h1 className="blog-page-title">Recetas y tips</h1>
+      <div className="post-link-wrapper">
         {edges.map(edge => (
-          <PostLink key={edge.node.id} post={edge.node}/>
+          <PostLink key={edge.node.id} post={edge.node} />
         ))}
       </div>
     </div>
@@ -37,12 +36,11 @@ export const BlogPageQuery = graphql`
           excerpt(pruneLength: 250)
           frontmatter {
             date(formatString: "MMMM DD, YYYY")
-            slug
             title
             description
             thumbnail
           }
-          fields{
+          fields {
             slug
           }
         }
