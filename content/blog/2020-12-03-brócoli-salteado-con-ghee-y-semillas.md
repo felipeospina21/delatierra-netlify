@@ -11,7 +11,7 @@ tags:
 ---
 Nuestro GHEE es perfecto para cocinar. Además de agregar un sabor delicioso a todas las preparaciones, nos ofrece un sin fin de beneficios nutricionales. Acá te dejamos una deliciosa idea para acompañar un salmón con batata al horno o cualquiera de tus platos favoritos!
 
-**INGREDIENTES:**
+#### **INGREDIENTES:**
 
 * 1 cda de nuestro [GHEE 𝐃𝐞 𝐋𝐚 𝐓𝐢𝐞𝐫𝐫𝐚](https://dlt-web.netlify.app/ghee)
 * Brócoli
@@ -21,7 +21,7 @@ Nuestro GHEE es perfecto para cocinar. Además de agregar un sabor delicioso a t
 * Ajo en polvo
 * Pimienta
 
-**PREPARACIÓN:**
+#### **PREPARACIÓN:**
 
 1. Lava muy bien el brócoli, corta pequeños arbolitos y blanquéalos en agua hirviendo sólo por unos pocos minutos.
 2. Precalienta un wok o una sartén a fuego medio, agrega un poco de nuestro [GHEE 𝐃𝐞 𝐋𝐚 𝐓𝐢𝐞𝐫𝐫𝐚](https://dlt-web.netlify.app/ghee) y luego agregar el brócoli.
