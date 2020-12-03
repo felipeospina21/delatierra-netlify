@@ -1,15 +1,15 @@
-import React, { useState } from "react";
-import SelectProduct from "./SelectProduct";
-import Image from "../image";
-import { Link } from "gatsby";
+import React, { useState } from "react"
+import SelectProduct from "./SelectProduct"
+import Image from "../image"
+import { Link } from "gatsby"
 
-import "./ProductCard.scss";
+import "./ProductCard.scss"
 
 const ProductCard = ({ id, slug, title, image, alias, sizes, cost }) => {
-  const [showBuyMenu, setShowBuyMenu] = useState(false);
+  const [showBuyMenu, setShowBuyMenu] = useState(false)
 
   function toggleMenu() {
-    setShowBuyMenu(!showBuyMenu);
+    setShowBuyMenu(!showBuyMenu)
   }
   return (
     <div className="product-card">
@@ -26,7 +26,9 @@ const ProductCard = ({ id, slug, title, image, alias, sizes, cost }) => {
           />
         ) : null}
 
-        <Image className="product-img" src={image} alt="natural products" />
+        <Link to={`/${slug}`}>
+          <Image className="product-img" src={image} alt="natural products" />
+        </Link>
         <div className="buy-btn-container">
           <Link to={`/${slug}`}>
             <button className="buy-btn">Ver más</button>
@@ -38,7 +40,7 @@ const ProductCard = ({ id, slug, title, image, alias, sizes, cost }) => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default ProductCard;
+export default ProductCard

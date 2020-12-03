@@ -24,7 +24,7 @@ export default function Template({
           <small>
             <strong>{frontmatter.date}</strong>
           </small>
-          <h1 className="blog-post-title">{frontmatter.title}</h1>
+          <h2 className="blog-post-title">{frontmatter.title}</h2>
 
           <MDXRenderer className="blog-post-content">{mdx.body}</MDXRenderer>
         </div>
