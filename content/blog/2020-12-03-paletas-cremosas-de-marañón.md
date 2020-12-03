@@ -9,11 +9,10 @@ tags:
   - vegano
   - saludable
 ---
-INGREDIENTES:
-• ½ taza de nuestra crema de marañon 𝐃𝐞 𝐋𝐚 𝐓𝐢𝐞𝐫𝐫𝐚
-• ½ lata de crema de coco sin azúcar
-• 1 banano maduro
-• Stevia al gusto
+* ½ taza de nuestra [crema de marañón 𝐃𝐞 𝐋𝐚 𝐓𝐢𝐞𝐫𝐫𝐚](https://dlt-web.netlify.app/crema-mara%C3%B1on)
+* ½ lata de crema de coco sin azúcar
+* 1 banano maduro
+* Stevia líquida al gusto
 
 Procesa todos los ingredientes hasta obtener una mezcla homogénea, vierte la mezcla en moldecitos de paleta y lleva al congelador.
 Puedes comerlas solas o agregarle toppings como chocolate oscuro, coco o nueces.
