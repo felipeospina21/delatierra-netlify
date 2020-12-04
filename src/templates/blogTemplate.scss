@@ -16,17 +16,11 @@
     margin-bottom: 0.5em;
 }
 
-.blog-post-title{
-    display: flex;
-    justify-content: center;
-    margin: 0.5em auto 0.2em auto;
-    text-transform: uppercase;
 
-}
 
 .blog-post{
     & h1,h2,h3,h4,h5,h6,p{
-        margin-top: 2em;
+        margin-top: 1.5em;
         }
 
     & a{
@@ -51,4 +45,15 @@
         display: flex;
         flex-wrap: wrap;
     }
+
+    & .blog-post-title{
+        margin: 0.5em auto;
+    }
+}
+
+.blog-post-title{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
 }

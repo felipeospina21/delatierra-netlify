@@ -27,7 +27,7 @@ function NavLinks({ toggleNav }) {
       </li>
       <li>
         <Link to="/blog" onClick={toggleNav}>
-          Recetas/Tips
+          Recetas
         </Link>
       </li>
     </ul>
