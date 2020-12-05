@@ -19,6 +19,17 @@ module.exports = {
     author: `Felipe Ospina C`,
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-177512946-1",
+        head: true,
+        respectDNT: false,
+        exclude: ["/preview/**", "/do-not-track/me/too/"],
+        pageTransitionDelay: 0,
+        defer: false,
+      },
+    },
     `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
@@ -32,7 +43,6 @@ module.exports = {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 1000,
-              
             },
           },
         ],
@@ -106,6 +116,7 @@ module.exports = {
       resolve: `gatsby-plugin-create-client-paths`,
       options: { prefixes: [`/app/*`] },
     },
+
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

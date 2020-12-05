@@ -34,10 +34,16 @@
 	overflow: auto;
 
 	& table {
-		width: 95%;
-		margin: 0.2em;
+		width: 100%;
+		margin: 0.2em auto;
+	}
+
+	& th {
+		border-bottom: 1px solid black;
 	}
 }
+
+
 
 .cart-item {
 	margin: 0.5em auto;
@@ -48,6 +54,7 @@
 		text-align: center;
 		margin: auto;
 	}
+
 }
 
 .cart-checkout {
@@ -96,6 +103,11 @@
 	padding: 0.5em;
 }
 
-// .close-btn{
-// 	font-size: 1em;
-// }
+.cart-dropdown-table-item-row{
+	display: flex;
+	justify-content: left;
+	padding-left: 1em;
+}
+
+
+

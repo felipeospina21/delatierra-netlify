@@ -1,4 +1,5 @@
 import firebase from "gatsby-plugin-firebase"
+import { toast } from "react-toastify"
 
 export const isBrowser = () => typeof window !== "undefined"
 
@@ -21,6 +22,7 @@ export const handleLogin = async ({ email, password }) => {
     // await navigate(`/app/inventario`);
   } catch (err) {
     console.log(err)
+    notifyError(err.message)
     return false
   }
 }
@@ -34,3 +36,9 @@ export const logout = callback => {
   setUser({})
   callback()
 }
+
+export const notifyError = err =>
+  toast.error(`${err}`, {
+    autoClose: 5000,
+    position: toast.POSITION.BOTTOM_CENTER,
+  })

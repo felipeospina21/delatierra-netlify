@@ -21,15 +21,16 @@ function NavLinks({ toggleNav }) {
         </Link>
       </li>
       <li>
-        <Link to="/contacto" onClick={toggleNav}>
-          Contacto
-        </Link>
-      </li>
-      <li>
         <Link to="/blog" onClick={toggleNav}>
           Recetas
         </Link>
       </li>
+      <li>
+        <Link to="/contacto" onClick={toggleNav}>
+          Contacto
+        </Link>
+      </li>
+     
     </ul>
   );
 }

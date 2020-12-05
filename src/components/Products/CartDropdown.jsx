@@ -53,14 +53,14 @@ const CartDropdown = ({ toggle }) => {
             <tr>
               <th>Cantidad</th>
               <th>Item</th>
-              <th />
-              <th>Valor</th>
+              <th>Valor unitario</th>
             </tr>
             {cartItems.map((cartItem, index) => (
               <tr className="cart-item" key={index}>
-                <td>{cartItem.quantity}</td>
-                <td>{`${cartItem.itemName} ${cartItem.size}`}</td>
-                <td>=</td>
+                <td className="cart-dropdown-table-quantity-row">
+                  {cartItem.quantity}
+                </td>
+                <td className="cart-dropdown-table-item-row">{`${cartItem.itemName} ${cartItem.size}`}</td>
                 <td>$ {thousandSeparator(cartItem.cost)}</td>
               </tr>
             ))}
