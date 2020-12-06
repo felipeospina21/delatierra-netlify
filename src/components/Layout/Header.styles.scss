@@ -30,8 +30,6 @@
 	background: transparent;
 	border-color: transparent;
 	cursor: pointer;
-	// display: flex;
-	// margin: 0.5rem 2.5em 0 0.5em;
 	position: absolute;
 	right: 3.5em;
 	top: 34px;
@@ -52,5 +50,12 @@
 @media screen and (min-width: 1000px) {
 	.toggle-menu {
 		display: none;
+	}
+}
+
+@media screen and (min-width: 1300px) {
+	.logo{
+		max-height: 100px;
+		width: 250px;
 	}
 }

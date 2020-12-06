@@ -1,6 +1,6 @@
-import React from "react";
+import React from "react"
 
-import "./ProductInfo.scss";
+import "./ProductInfo.scss"
 
 const ProductInfo = ({ description, properties, ingredients, sizes, cost }) => {
   return (
@@ -37,7 +37,7 @@ const ProductInfo = ({ description, properties, ingredients, sizes, cost }) => {
         </ul>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default ProductInfo;
+export default ProductInfo
