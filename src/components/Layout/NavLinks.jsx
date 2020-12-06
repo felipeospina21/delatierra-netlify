@@ -1,6 +1,6 @@
-import React from "react";
-import { Link } from "gatsby";
-import "./NavLinks.styles.scss";
+import React from "react"
+import { Link } from "gatsby"
+import "./NavLinks.styles.scss"
 
 function NavLinks({ toggleNav }) {
   return (
@@ -30,9 +30,8 @@ function NavLinks({ toggleNav }) {
           Contacto
         </Link>
       </li>
-     
     </ul>
-  );
+  )
 }
 
-export default NavLinks;
+export default NavLinks

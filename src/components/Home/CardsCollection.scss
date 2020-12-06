@@ -24,3 +24,14 @@
 		z-index: 1;
 	}
 }
+
+.card-blank-space-title{
+	opacity: 0.2;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-bottom: 1px solid black;
+	border-top: 1px solid black;
+	padding: 1em;
+	margin: 1em;
+}
