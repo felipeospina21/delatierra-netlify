@@ -8,7 +8,7 @@ const PrivateRoute = ({ component: Component, location, ...rest }) => {
       navigate("/app/login");
       // return null
     }
-  }, [isLoggedIn, location]);
+  }, []);
 
   return isLoggedIn ? <Component {...rest} /> : null;
 };
