@@ -1,8 +1,8 @@
-import React, { useState, createContext } from "react";
+import React, { useState, createContext } from "react"
 
-export const ProductsContext = createContext();
+export const ProductsContext = createContext()
 
-export const ProductsProvider = (props) => {
+export const ProductsProvider = props => {
   const [products, setProducts] = useState([
     {
       title: "ghee",
@@ -89,7 +89,7 @@ export const ProductsProvider = (props) => {
       excerpt:
         "Crema natural de macadamia, con un sabor balanceado y profundo, y una textura suave y cremosa.",
       description:
-        "Esta Crema es elaborada con macadamia local, cultivada y cosechada por manos campesinas colombianas. Tiene un sabor balanceado y profundo, y una textura suave y cremosa. Puede ser utilizada en recetas dulces y saladas. Ideal como topping para granola o fruta, o para esparcir sobre pan o galletas. También puede ser utilizada como complemento en ensaladas, pescado o carne.",
+        "Esta crema es elaborada con macadamia local, cultivada y cosechada por manos campesinas colombianas. Tiene un sabor balanceado y profundo, y una textura suave y cremosa. Puede ser utilizada en recetas dulces y saladas. Ideal como topping para granola o fruta, o para esparcir sobre pan o galletas. También puede ser utilizada como complemento en ensaladas, pescado o carne.",
       properties: [
         "Aporta vitamina A, E y B",
         "Fuente de calcio, hierro, fósforo, potasio y selenio",
@@ -104,13 +104,13 @@ export const ProductsProvider = (props) => {
       quantity: [0, 0],
       showBuyMenu: false,
     },
-  ]);
+  ])
 
   return (
     <ProductsContext.Provider value={[products, setProducts]}>
       {props.children}
     </ProductsContext.Provider>
-  );
-};
+  )
+}
 
 // export default ({ element }) => <ProductsProvider>{element}</ProductsProvider>;

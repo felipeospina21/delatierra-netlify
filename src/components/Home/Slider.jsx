@@ -34,10 +34,10 @@ const Slider = () => {
           </div>
         )
       })}
-      <button id="goLeft" onClick={goLeft}>
+      <button id="goLeft" aria-label="go left button" onClick={goLeft}>
         <LeftArrow />
       </button>
-      <button id="goRight" onClick={goRight}>
+      <button id="goRight" aria-label="go right button" onClick={goRight}>
         <RightArrow />
       </button>
       <div className="slider-call-to-action-container">
