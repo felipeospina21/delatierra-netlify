@@ -100,7 +100,7 @@ export const ProductsProvider = props => {
       ],
       ingredients: ["Macadamia natural tostada"],
       sizes: ["400gr", "200gr"],
-      cost: [55000, 33000],
+      cost: [60000, 35000],
       quantity: [0, 0],
       showBuyMenu: false,
     },
